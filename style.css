@@ -1,0 +1,64 @@
+body{
+    perspective: 1600px;
+}
+article{
+    display: flex;
+    background-color: burlywood;
+    justify-content: space-evenly;
+    height:300px !important;
+}
+article section{
+    margin:20px;
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgb(20, 215, 249);
+    border-radius: 20px;
+}
+article section h2{
+    font-size: 2rem;
+    margin:10px 0;
+}
+article section img{
+    width:80%;
+}
+article section div div{
+    width:30%;
+    margin:50px auto 0px auto;
+}
+article p{
+    color:grey;
+}
+article section div:nth-of-type(1){
+   
+    
+    background: #f7f7f8;
+    flex-basis:100%;
+    transition: 0.2s; flex-shrink: 1;
+    border-radius: 20px;
+    text-align: center;
+}
+article section div:nth-of-type(2){
+   
+    
+    overflow: hidden;
+    flex-basis:0%;
+    flex-shrink: 1;
+    text-align: center;
+    border-radius: 15px;
+    
+   
+}
+article section:hover div:nth-of-type(1){
+    opacity: 0.5;
+    flex-basis:0%;
+    overflow: hidden;
+    background-color: rgb(20, 215, 249);
+}
+article section:hover div:nth-of-type(2){
+   flex-grow: 1;
+   flex-basis:1;
+   padding:50px 0;
+   
+}
+
